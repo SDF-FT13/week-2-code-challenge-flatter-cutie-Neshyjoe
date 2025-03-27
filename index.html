@@ -1,37 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatacuties Voting</title>
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <title>Flatacuties</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-<body>
-    <header>
-        <h1>Flatacuties</h1>
-    </header>
-
-    <div id="character-bar"></div>
-
-    <div id="detailed-info">
-        <img id="character-image" src="" alt="Character image">
-        <h2 id="character-name"></h2>
-        <div id="vote-container">
-            <span id="vote-label">Votes: </span>
-            <span id="character-votes">0</span>
-        </div>
+  <body>
+    <div class="logo">
+      <h1>Flatacuties</h1>
     </div>
 
-    <form id="votes-form">
-        <input type="number" id="votes-input" placeholder="Enter votes" required>
-        <button type="submit">Add Votes</button>
-    </form>
+    <div id="character-bar">
+      <!-- show characters names here -->
+    </div>
 
-    <button id="reset-btn">Reset All Votes</button>
-
-    <script src="index.js"></script>
-</body>
-</html>
+    <div class="characterInfo">
+      <div id="detailed-info">
+        <p id="name">Character's Name</p>
+        <img
+          id="image"
+          src="assets/dummy.gif"
+          alt="Character's Name"
+        /><!-- display character image here -->
+        <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
+        <form id="votes-form">
+          <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
+          <input type="submit" value="Add Votes" />
+        </form>
+        <button id="reset-btn">Reset Votes</button>
+      </div>
 
       <!-- Bonus only! Uncomment the elements below when you are ready to work on the bonus deliverables -->
       <!-- 
@@ -48,4 +43,7 @@
           <input type="submit" value="Add Character" />
         </form> 
       -->
-
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
