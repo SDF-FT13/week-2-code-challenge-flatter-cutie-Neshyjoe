@@ -19,7 +19,8 @@
           id="image"
           src="assets/dummy.gif"
           alt="Character's Name"
-        /><!-- display character image here -->
+        />
+        <!-- display character image here -->
         <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
         <form id="votes-form">
           <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
@@ -28,20 +29,17 @@
         <button id="reset-btn">Reset Votes</button>
       </div>
 
-      <h4>Add New Character</h4>
-      <form id="character-form">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-        </div>
-            <div>
-              <label for="image-url">Image URL</label>
-              <input type="text" id="image-url" name="image-url" />
-            </div>
-            <input type="submit" value="Add Character" />
-          </form>
+      <!-- Bonus only! Uncomment the elements below when you are ready to work on the bonus deliverables -->
+      <!--Add New character Form --> 
+        <h4>Add New Character</h4>
+        <form id="character-form">
+          <input type="text" id="name" placeholder="Character Name" required />
+        <input type="number" id="votes" placeholder="Votes" min="0" required />
+        <button type="submit">Add Character</button>
+        </form> 
+        <button id="reset-votes">Reset Votes</button>
+      
     </div>
     <script src="src/index.js"></script>
-    
   </body>
 </html>
